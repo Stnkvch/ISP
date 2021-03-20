@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 
 namespace ConsoleApp2
@@ -6,7 +6,7 @@ namespace ConsoleApp2
 
     class Program
     {
-        static double a, b, c, d;
+        static double a, b, c, d,v;
         static void Main(string[] args)
         {
             for (; ; )
@@ -130,8 +130,15 @@ namespace ConsoleApp2
                             Console.WriteLine("Корень уравнения :" + "\nx1 = " + x1);
                         }
                         if (D < 0)
-                            Console.WriteLine("Нет корней");
+                        {
+                            x1 = -c / (2 * b); 
+                            v=Math.Sqrt(Math.Abs(D)) / (2*b);
+
+                            Console.WriteLine("Корни уравнения :" + "\nx1 = " + x1 + "-" + v + "i");
+                            Console.WriteLine( "\nx2 = " + x1 + "+" + v + "i");
+                        }
                     }
+                    
                     else
                     {
                         x1 = 0;
@@ -172,8 +179,14 @@ namespace ConsoleApp2
                     }
                     else
                     {
+                        D = (Math.Pow(c, 2) - 4 * b * d);
                         if (-d / b < 0)
-                            Console.WriteLine("Нет корней");
+                        {
+                            v = Math.Sqrt(Math.Abs(D)) / (2 * b);
+                            Console.WriteLine("Корни уравнения :" + "\nx1 = " + "-" + v + "i");
+                            Console.WriteLine("\nx2 = " + "+" + v + "i");
+                        }
+
                         else
                         {
                             x1 = Math.Sqrt(-d / b);
@@ -183,14 +196,12 @@ namespace ConsoleApp2
                         }
                     }
                 }
-                if (a == 0 && b == 0 && c == 0)
-                {
-                    if (d == 0)
-                        Console.WriteLine("Нет корней");
-                    else
-                        Console.WriteLine("Нет корней");
 
+                if (a == 0 && b == 0 && c == 0 && d==0)
+                {                 
+                        Console.WriteLine("Нет корней");
                 }
+
                 if (a != 0 && b != 0 && c != 0 && d != 0 || a != 0 && b == 0 && c != 0 && d != 0)
                 {
                     b /= a;
@@ -226,7 +237,7 @@ namespace ConsoleApp2
                             x2 = Math.Sign(R) * Math.Sqrt(Q) * ((Math.Pow(2.71, F) + Math.Pow(2.71, -F)) / 2) - b / 3;
                             x22 = Math.Sqrt(3) * Math.Sqrt(Q) * ((Math.Pow(2.71, F) - Math.Pow(2.71, -F)) / 2);
                             x3 = Math.Sign(R) * Math.Sqrt(Q) * ((Math.Pow(2.71, F) + Math.Pow(2.71, -F)) / 2) - b / 3;
-                            Console.WriteLine("x1 = " + Math.Round(x1) + "\n");
+                            Console.WriteLine("x1 = " + x1 + "\n");
                             Console.WriteLine("x2 = " + x2 + "+" + x22 + "i" + "\n");
                             Console.WriteLine("x3 = " + x3 + "-" + x22 + "i" + "\n\n");
                         }
@@ -239,7 +250,7 @@ namespace ConsoleApp2
                             x33 = Math.Sqrt(3) * Math.Sqrt(Math.Abs(Q)) * ((Math.Pow(2.71, F) + Math.Pow(2.71, -F)) / 2);
                             x3 = Math.Sign(R) * Math.Sqrt(Math.Abs(Q)) * ((Math.Pow(2.71, F) - Math.Pow(2.71, -F)) / 2) - b / 3;
 
-                            Console.WriteLine("x1 = " + Math.Round(x1) + "\n");
+                            Console.WriteLine("x1 = " +x1 + "\n");
                             Console.WriteLine("x2 = " + x2 + "+" + x33 + "i" + "\n");
                             Console.WriteLine("x3 = " + x3 + "-" + x33 + "i" + "\n\n");
                         }
@@ -248,8 +259,8 @@ namespace ConsoleApp2
                     {
                         x1 = -2 * Math.Sign(R) * Math.Sqrt(Q) - b / 3;
                         x2 = Math.Sign(R) * Math.Sqrt(Q) - b / 3;
-                        Console.WriteLine("x1 = " + Math.Round(x1) + "\n");
-                        Console.WriteLine("x2 = " + Math.Round(x2) + "\n\n");
+                        Console.WriteLine("x1 = " + x1 + "\n");
+                        Console.WriteLine("x2 = " +x2 + "\n\n");
                     }
                 }
             }
