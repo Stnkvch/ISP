@@ -1,0 +1,13 @@
+C:\Users\denis\source\repos\Lr7\Lr7\bin\Debug\netcoreapp3.1\Lr7.exe
+C:\Users\denis\source\repos\Lr7\Lr7\bin\Debug\netcoreapp3.1\Lr7.deps.json
+C:\Users\denis\source\repos\Lr7\Lr7\bin\Debug\netcoreapp3.1\Lr7.runtimeconfig.json
+C:\Users\denis\source\repos\Lr7\Lr7\bin\Debug\netcoreapp3.1\Lr7.runtimeconfig.dev.json
+C:\Users\denis\source\repos\Lr7\Lr7\bin\Debug\netcoreapp3.1\Lr7.dll
+C:\Users\denis\source\repos\Lr7\Lr7\bin\Debug\netcoreapp3.1\Lr7.pdb
+C:\Users\denis\source\repos\Lr7\Lr7\obj\Debug\netcoreapp3.1\Lr7.csprojAssemblyReference.cache
+C:\Users\denis\source\repos\Lr7\Lr7\obj\Debug\netcoreapp3.1\Lr7.AssemblyInfoInputs.cache
+C:\Users\denis\source\repos\Lr7\Lr7\obj\Debug\netcoreapp3.1\Lr7.AssemblyInfo.cs
+C:\Users\denis\source\repos\Lr7\Lr7\obj\Debug\netcoreapp3.1\Lr7.csproj.CoreCompileInputs.cache
+C:\Users\denis\source\repos\Lr7\Lr7\obj\Debug\netcoreapp3.1\Lr7.dll
+C:\Users\denis\source\repos\Lr7\Lr7\obj\Debug\netcoreapp3.1\Lr7.pdb
+C:\Users\denis\source\repos\Lr7\Lr7\obj\Debug\netcoreapp3.1\Lr7.genruntimeconfig.cache
